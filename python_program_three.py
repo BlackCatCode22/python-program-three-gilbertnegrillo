@@ -31,19 +31,25 @@ print("\n")
 print(contacts)
 
 def add_contact(): # Implemented a function called add_contact.
-    name = input("Enter a name: ") # Input user's name
+    name = input("\nEnter a name: ") # Input user's name
     if any(contact["name"] == name for contact in contacts): # Create if-else statement to make sure contact name is unique.
         print("That name already exists in the contact.")
     else:
         phone = input("Enter a phone number: ")
         email = input("Enter an email address: ")
         new_contact = {"name": name, "phone": phone, "email": email}
-        for key, value in new_contact.items():
+        for key, value in new_contact.items(): # Iterate through key-value pairs.
             print(f"{key}: {value}")
         contacts.append(new_contact) # Use append method to add to contacts list.
-        print("New contact added.")
+        print("New contact added.") # Verify contact has been added.
 
 add_contact() # Call add_contact function.
-print(contacts)
 
+def view_contacts(): # Implemented a function called view_contacts.
+    print("\nList of all Contacts:")
+    for contact in contacts: # Use for/in loop to iterate through the contacts list.
+        for key, value in contact.items(): # Iterate through key-value pairs
+            print(f"{key}: {value}")
+        print()
 
+view_contacts() # Call view_contacts function.
