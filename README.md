@@ -55,7 +55,7 @@ Advanced: Your program will provide a menu with options to add a contact, view a
 
 Advanced: Implement error handling to handle invalid user input.
 
-Advanced: Use Python file i/o to output your list of contcts to a text file on your local machine. 
+Advanced: Use Python file i/o to output your list of contacts to a text file on your local machine. 
 
 Submission:
 
@@ -75,6 +75,17 @@ Good luck, and enjoy working on this assignment! If you have any questions or ne
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Line 35: To make sure the user input's a unique contact name that does not exist in the contacts list, I used any function to check if the name entered is equal to the names for contact in contacts list.
+Test Case - Line 35: To make sure the user input's a unique contact name that does not exist in the contacts list, I used any function to check if the name entered is equal to the names for contact in contacts list. I added the any function because if I didn't then any input the user would have entered it would have said that the name already exists even if the name did not exist in the contacts list.
+Test Case - Line 35-48: If I had more time, an improvement I would have tried to make is allow the user to input a name again instead of terminating the program if the name they typed had already existed in the contacts list.
+Test Case - If I had more time, I would have liked to try and create a menu with options to add a contact, view all contacts, search for a contact, or exit the program.
+Test Case - Handling errors and validating user input is also something I should have done more if I had more time.
+
+Summary:
+The first thing I did was create my contacts variable and with an empty list. In lines 9-32 are each contact is represented as a dictionary with the keys: name, phone, and email. 
+To get the key-value pairs, I used a for/in loop in each contact with the items method to return the list with all dictionary keys with values. 
+Throughout the code, I used the f function to format the key-value pairs. 
+The first function in the program is add_contact, which has no parameters and takes no arguments to the function call. This is where it takes user input and add a new contact to the contacts list. To make sure each contact has a unique name I used an if-else statement. If the user enters a name that already exists in the contacts list then it will print the message to the user saying that the name already exists in the contacts list. Else, the user will be able to add a new contact if the name that was entered did not exist in the contacts lists. I used the append method to add the new contact to the contacts list.
+The second function in the program is view_contacts, which has no parameters and takes no arguments to the function call. This displays the list of all contacts. I used the for/in loop to iterate through the contacts list. Then I used a for/in loop to iterate through key-value pairs. To put it in a user-friendly format, I used the f function to format the key-value pairs.
+The last function in the program is search_contact, which has no parameters and takes no arguments to the function call. This takes a name as input and searches for the contact by name. I used a for/in loop to iterate through the contacts list. Then I used an if-else statement. If the user entered a name that was in the contacts list then it would display the contact's details. Else, a message will be printed indicating that the contact was not found.
 
 
