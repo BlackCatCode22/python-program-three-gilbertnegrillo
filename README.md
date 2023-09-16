@@ -73,6 +73,8 @@ Adherence to Python coding conventions and best practices.
 
 Good luck, and enjoy working on this assignment! If you have any questions or need clarification, reach out during weekend office hours or via the Canvas inBox.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Line 35: To make sure the user input's a unique contact name that does not exist in the contacts list, I used any function to check if the name entered is equal to the names for contact in contacts list.
 
 
